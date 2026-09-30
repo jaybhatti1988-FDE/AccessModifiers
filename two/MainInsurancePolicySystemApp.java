@@ -9,8 +9,9 @@ public class MainInsurancePolicySystemApp {
 	      System.out.println("╚══════════════════════════════════════════╝");
 		
 		InsurancePolicy policy=new InsurancePolicy("POL220991", "Dhiren Shah", 24000.00, "Medical-Care");
-
-		InsuranceDetails policydetails=new InsuranceDetails("POL220991", "Dhiren Shah", 24000.00, "Medical-Care",1500000,20);
+	    policy.displayPolicyDetails();
+	    
+		InsuranceDetails policydetails=new InsuranceDetails("POL220991", "Dhiren Shah", 24000.00, "HDFC-Life-Medical-Care",1500000,20);
 		policydetails.displayPolicyDetails();
 		policydetails.displayCompanyFromSubclass();
 	}
